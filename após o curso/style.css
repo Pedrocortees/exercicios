@@ -1,0 +1,17 @@
+
+p {color: rgba(158, 10, 226, 0.356);
+display: flex; justify-content: center;
+}
+h1 {color: rgb(102, 3, 141);
+display: flex; justify-content: center;
+}
+h2 {color: rgb(95, 0, 150);
+display: flex; justify-content: center;}
+{background-color: black    ;}
+body {background-color: black;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font: size 20px;;}
+#dov{display: flex; justify-content: center;} 
+a {
+    display: flex; justify-content: center;
+}
