@@ -8,16 +8,17 @@
     padding: 0px;
     box-sizing: border-box;
 }
-body, html{
-    width: 100vw;
+ html{ 
     height: 100vh;
 }
 body{
     background-color: black url(../imagens/back-phone.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 main{
-    background-color: rgb(255, 2555, 255, 0.842 );
-    width: 90vw;
+    background-color: rgba(255, 255, 255, 0.842);
+    width: 400px;
     margin: auto;
     margin-top: 20px;
     border-radius: 10px;
