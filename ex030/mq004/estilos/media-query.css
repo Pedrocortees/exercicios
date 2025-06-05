@@ -9,13 +9,21 @@ Desktop: 992 até 1200px
 Grandes telas: acima de 1200px 
 */
 
-@media print {
-    
+body {
+    background-image: url(../imagens/back-phone.jpg); /* A imagem do celular */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
-@media screen and (min-width: 768px) and (max-width:992px){ /*TABLET*/
-    body{
+
+/* Para tablets */
+@media screen and (min-width: 768px) and (max-width:991px) { /* Ajustei max-width para 991px para evitar sobreposição */
+    body {
         background-image: url(../imagens/back-tablet.jpg);
     }
+    img{
+    display: block;
+    margin: auto;
  }
 img#phone {
     display: none;
@@ -32,12 +40,17 @@ img#pc{
 img#tv{
     display: none;
 }
-
-@media screen and (min-width 992px) and (max-width:1200px) { /*DESKTOP */
-    body{
-        background-image: url(../imagens/back-pc.jpg);
-    }
 }
+
+/* Para desktops */
+@media screen and (min-width: 992px) and (max-width:1199px) { /* Ajustei max-width para 1199px */
+    body {
+        background-image: url(../imagens/back-pc.jpg); /* Sua imagem de desktop */
+    }
+    img{
+    display: block;
+    margin: auto;
+ }
 img#phone {
     display: none;
 }
@@ -53,7 +66,30 @@ img#pc{
 img#tv{
     display: none;
 }
+}
 
-@media screen and (min-width:1200px) { /*GRANDES TELAS */ 
-    
+/* Para grandes telas */
+@media screen and (min-width:1200px) {
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    img{
+    display: block;
+    margin: auto;
+ }
+img#phone {
+    display: none;
+}
+img#tablet{
+    display: none;
+}
+img#print{
+    display: none;
+}
+img#pc{
+    display: none;
+}
+img#tv{
+    display: block;
+}
 }
