@@ -26,3 +26,28 @@ body {
   top: 0;
   left: 0;
 }
+@media (max-width: 480px) {
+  .heart {
+    width: 40vw;
+    height: 36vw;
+  }
+
+  .heart::before,
+  .heart::after {
+    width: 40vw;
+    height: 36vw;
+  }
+
+  h1 {
+    font-size: 8vw;
+  }
+}.heart {
+  width: 30vw;
+  height: 27vw;
+  background-color: red;
+  position: relative;
+  transform: rotate(-45deg);
+  animation: pulse 1s infinite;
+  min-width: 100px;
+  min-height: 90px;
+}
